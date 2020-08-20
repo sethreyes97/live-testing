@@ -1,0 +1,8 @@
+urls:
+  principal:
+
+timeouts:
+  light: <%= ENV['LIGHT_TIMEOUT']%>
+  short: <%= ENV['SHORT_TIMEOUT']%>
+  medium: <%= ENV['MEDIUM_TIMEOUT']%>
+  long: <%= ENV['LONG_TIMEOUT']%>

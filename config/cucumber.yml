@@ -1,0 +1,20 @@
+# Cucumber profiles for automation execution
+
+default: -p pretty -p html
+
+# RERUN & RETRY
+set_retest: -f rerun -o failed_scenarios.yaml -p default
+retest: '@failed_scenarios.yaml -p default'
+retry: --retry 1 -p default
+
+# FORMATS
+pretty: -f pretty # Prints the feature as is - in colours.
+rerun: -f rerun # Prints failing files with line numbers.
+
+# REPORTS
+# Generates a nice looking HTML report.
+html: -f html --out results/reports/<%=Time.now.strftime('%F')%>/<%=Time.now.strftime('%H%M%S')%>_browser_report.html
+# Prints the feature as JSON
+json: -f json --out results/reports/<%=Time.now.strftime('%F')%>/json_results.json
+# Prints the feature as prettified JSON
+json_pretty: -f json_pretty --out results/reports/<%=Time.now.strftime('%F')%>/json_pretty_results.json
