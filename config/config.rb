@@ -10,7 +10,7 @@ module Config
   GENERAL_FILE = "./config/general.env"
   ENV_REQUIRED = './config/environment.env.default'
 
-  CONFIG_KEYS = %w[urls timeouts].freeze
+  CONFIG_KEYS = %w[urls timeouts test_api].freeze
 
   def self.load_environment
     Dotenv.load(ENV_FILE, GENERAL_FILE) if File.file?(ENV_FILE)

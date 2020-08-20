@@ -6,3 +6,8 @@ timeouts:
   short: <%= ENV['SHORT_TIMEOUT'] || 5 %>
   medium: <%= ENV['MEDIUM_TIMEOUT'] || 10 %>
   long: <%= ENV['LONG_TIMEOUT'] || 15 %>
+
+test_api:
+  endpoint: https://jsonplaceholder.typicode.com/todos/
+  header:
+      Content-Type: text/json
