@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Given(/^user visit the "([^"]*)" page$/) do |page|
-  #UrlNavigationCapybara.navigate_to(Config.urls[page])
+  UrlNavigationCapybara.navigate_to(Config.urls[page])
   #GenericPage.search
 end
 

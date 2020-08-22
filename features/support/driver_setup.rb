@@ -16,4 +16,4 @@ else
 end
 
 Capybara.default_driver = BROWSER.to_sym
-Capybara.default_max_wait_time = Config.timeouts['long']
+Capybara.default_max_wait_time = Config.timeouts['short']

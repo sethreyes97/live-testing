@@ -2,14 +2,14 @@
 
 # Users factory
 class User
-  attr_accessor :email, :password, :id
+  attr_accessor :email, :password, :country
 end
 
 FactoryBot.define do
   factory :user do
-      email { Faker::Internet.email }
-      password { 'Test1234' }
-      id { '2' }
+      email { 'test' }
+      password { '123' }
+      country { 'Canadá' }
   end
   skip_create
 end

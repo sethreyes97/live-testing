@@ -1,5 +1,5 @@
 urls:
-  principal: https://www.google.com
+  bitso: https://www.bitso.com
 
 timeouts:
   light: <%= ENV['LIGHT_TIMEOUT'] || 1 %>
